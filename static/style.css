@@ -283,28 +283,37 @@ body {
 }
 
 #sendButton {
-    background: rgba(255, 255, 255, 0.25); /* Same as chat-input-container style */
-    border: 3px solid rgba(255, 255, 255, 0.071);
+    background: rgba(255, 255, 255, 0.3); /* Same as quick reply */
+    border: 2px solid rgba(255, 255, 255, 0.6);
     color: white;
     width: 50px;
     height: 50px;
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.192);
+    border-radius: 20px; /* Rounded like quick reply */
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 0.3s ease;
 }
 
 #sendButton:hover {
-    background: rgba(255, 255, 255, 0.626);
+    background: white;              /* Same hover effect */
+    color: #0072ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
 }
 
 #sendButton svg {
-    stroke: #1500ff80; /* Blue arrow */
+    stroke: #0072ff; /* Blue arrow like hover text */
+    transition: stroke 0.3s ease;
 }
+
+#sendButton:hover svg {
+    stroke: #0072ff; /* Keep blue when hovered */
+}
+
 
 
 /* ===== Scrollbar Styling ===== */
