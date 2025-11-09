@@ -1,3 +1,5 @@
+const USER_IMAGE_URL = window.USER_PROFILE_IMAGE || '/static/assets/default-user.webp';
+
 class AIRAChatbot {
     constructor() {
         this.chatMessages = document.getElementById('chatMessages');
@@ -78,55 +80,64 @@ class AIRAChatbot {
         }
     }
     
-    addMessage(content, sender) {
-        const messageDiv = document.createElement('div');
-        messageDiv.className = `message ${sender}-message`;
-        
-        const avatarDiv = document.createElement('div');
-        avatarDiv.className = 'message-avatar';
-        avatarDiv.textContent = sender === 'user' ? 'Y' : 'A';
-        
-        const contentDiv = document.createElement('div');
-        contentDiv.className = 'message-content';
-        
-        const contentParagraph = document.createElement('p');
-        contentParagraph.textContent = content;
-        
-        contentDiv.appendChild(contentParagraph);
-        messageDiv.appendChild(avatarDiv);
-        messageDiv.appendChild(contentDiv);
-        
-        this.chatMessages.appendChild(messageDiv);
-        
-        // Scroll to bottom
-        this.scrollToBottom();
-    }
+addMessage(content, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${sender}-message`;
+
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'message-avatar';
+
+    const avatarImg = document.createElement('img');
+    avatarImg.src = sender === 'user' 
+        ? (USER_IMAGE_URL || '/static/assets/default-user.webp') 
+        : '/static/assets/Chatbot-logo.png';
+
+    avatarImg.alt = sender === 'user' ? 'User' : 'AIRA';
+    avatarDiv.appendChild(avatarImg);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+
+    const contentParagraph = document.createElement('p');
+    contentParagraph.textContent = content;
+
+    contentDiv.appendChild(contentParagraph);
+    messageDiv.appendChild(avatarDiv);
+    messageDiv.appendChild(contentDiv);
+
+    this.chatMessages.appendChild(messageDiv);
+    this.scrollToBottom();
+}
+
     
-    showTypingIndicator() {
-        const typingDiv = document.createElement('div');
-        typingDiv.className = 'message bot-message';
-        typingDiv.id = 'typing-indicator';
-        
-        const avatarDiv = document.createElement('div');
-        avatarDiv.className = 'message-avatar';
-        avatarDiv.textContent = 'A';
-        
-        const contentDiv = document.createElement('div');
-        contentDiv.className = 'message-content';
-        contentDiv.innerHTML = `
-            <div class="typing-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        `;
-        
-        typingDiv.appendChild(avatarDiv);
-        typingDiv.appendChild(contentDiv);
-        this.chatMessages.appendChild(typingDiv);
-        
-        this.scrollToBottom();
-    }
+showTypingIndicator() {
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'message bot-message';
+    typingDiv.id = 'typing-indicator';
+
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'message-avatar';
+
+    const avatarImg = document.createElement('img');
+    avatarImg.src = '/static/assets/Chatbot-logo.png';
+    avatarImg.alt = 'AIRA';
+    avatarDiv.appendChild(avatarImg);
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+    contentDiv.innerHTML = `
+        <div class="typing-dots">
+            <span></span><span></span><span></span>
+        </div>
+    `;
+
+    typingDiv.appendChild(avatarDiv);
+    typingDiv.appendChild(contentDiv);
+    this.chatMessages.appendChild(typingDiv);
+
+    this.scrollToBottom();
+}
+
     
     removeTypingIndicator() {
         const typingIndicator = document.getElementById('typing-indicator');

@@ -207,7 +207,12 @@ chatbot = HybridChatbot()
 @app.route('/')
 def home():
     """Serve the main chat interface"""
-    return render_template('index.html')
+    
+    # In real login-based system, replace this with actual user image from session or DB
+    user_image_url = "/static/assets/default-user.webp"  
+    
+    return render_template('index.html', user_image_url=user_image_url)
+
 
 @app.route('/getResponse', methods=['POST'])
 def get_response():
