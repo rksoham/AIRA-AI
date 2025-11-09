@@ -110,10 +110,14 @@
         },
         {
             "tag": "contact",
-            "patterns": [
+           "patterns": [
                 "contact", "contact number", "phone number", "email",
                 "how to contact", "college address", "where are you located",
-                "phone", "mobile number", "office number", "location"
+                "phone", "mobile number", "office number", "location",
+                "how can i reach the college", "give me the contact details",
+                "college phone number", "email address of the college",
+                "what is the college location", "where is acharya institute",
+                "how do i get in touch with acharya"
             ],
             "responses": [
                 "You can reach Acharya Institute of Technology at Phone plus91 74066 44449 or plus91 97317 97677 Email admissions@acharya.ac.in Address Acharya Dr S Radhakrishnan Road Acharya PO Soladevanahalli Bengaluru 560107 Karnataka India.",

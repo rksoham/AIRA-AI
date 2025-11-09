@@ -99,6 +99,19 @@ class HybridChatbot:
                         ]
                     },
                     {
+            "tag": "contact",
+            "patterns": [
+                "contact", "contact number", "phone number", "email",
+                "how to contact", "college address", "where are you located",
+                "phone", "mobile number", "office number", "location"
+            ],
+            "responses": [
+                "You can reach Acharya Institute of Technology at Phone plus91 74066 44449 or plus91 97317 97677 Email admissions@acharya.ac.in Address Acharya Dr S Radhakrishnan Road Acharya PO Soladevanahalli Bengaluru 560107 Karnataka India.",
+                "Contact details are as follows Phone plus91 74066 44449 or plus91 97317 97677 Email admissions@acharya.ac.in Address Acharya Dr S Radhakrishnan Road Soladevanahalli Bengaluru 560107 Karnataka India.",
+                "For any enquiries contact Acharya Institute of Technology at plus91 74066 44449 or plus91 97317 97677 or email admissions@acharya.ac.in The campus is located at Acharya Dr S Radhakrishnan Road Soladevanahalli Bengaluru 560107 Karnataka."
+            ]
+        },
+                    {
                         "tag": "courses",
                         "patterns": [
                             "courses", "programs", "what courses do you offer",
@@ -152,7 +165,7 @@ class HybridChatbot:
                 pattern_clean = self.preprocess_text(pattern)
                 similarity = self.calculate_similarity(user_input, pattern_clean)
                 
-                if similarity > highest_similarity and similarity > 0.6:  # Threshold
+                if similarity > highest_similarity and similarity > 0.5:  # Threshold
                     highest_similarity = similarity
                     best_match = intent
         
