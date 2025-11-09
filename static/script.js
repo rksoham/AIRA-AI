@@ -5,6 +5,9 @@ class AIRAChatbot {
         this.sendButton = document.getElementById('sendButton');
         this.quickReplyButtons = document.querySelectorAll('.quick-reply-btn');
         
+        // Flask backend endpoint
+        this.apiUrl = '/getResponse';
+        
         this.initializeEventListeners();
     }
     
@@ -14,7 +17,7 @@ class AIRAChatbot {
         
         // Enter key press event
         this.userInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter' && !e.shiftKjey) {
+            if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 this.sendMessage();
             }
@@ -51,8 +54,8 @@ class AIRAChatbot {
         this.showTypingIndicator();
         
         try {
-            // Send message to backend
-            const response = await fetch('/api/chat', {
+            // Send message to Flask backend
+            const response = await fetch(this.apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -66,7 +69,7 @@ class AIRAChatbot {
             this.removeTypingIndicator();
             
             // Add bot response
-            this.addMessage(data.answer, 'bot');
+            this.addMessage(data.reply, 'bot');
             
         } catch (error) {
             console.error('Error sending message:', error);

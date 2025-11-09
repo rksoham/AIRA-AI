@@ -1,0 +1,132 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hello", "hi", "hey", "good morning", "good afternoon",
+                "good evening", "howdy", "what's up", "hello there",
+                "hi there", "greetings", "how are you", "what's going on"
+            ],
+            "responses": [
+                "Hello! Welcome to AIRA College Assistant. How can I help you today?",
+                "Hi there! I'm AIRA, your college information assistant.",
+                "Greetings! How may I assist you with college-related queries?",
+                "Hello! I'm here to help with college information. What do you need to know?"
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": [
+                "bye", "goodbye", "see you", "see ya", "take care",
+                "quit", "exit", "have a good day", "bye bye",
+                "see you later", "good night", "talk to you later"
+            ],
+            "responses": [
+                "Goodbye! Feel free to ask if you have more questions.",
+                "See you later! Don't hesitate to return if you need assistance.",
+                "Have a great day! Remember, I'm here to help with college information.",
+                "Goodbye! Stay informed and do well in your academic journey."
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name", "who are you", "what should i call you",
+                "are you a bot", "are you human", "your name", "identify yourself",
+                "what are you", "who is this"
+            ],
+            "responses": [
+                "I'm AIRA - Artificial Intelligence Response Assistant, your college chatbot!",
+                "You can call me AIRA. I'm here to help with college information and FAQs.",
+                "I'm AIRA, your virtual college assistant. How can I help you today?",
+                "I'm AIRA, an AI assistant designed to help students with college information."
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "help", "what can you do", "how can you help", "what do you do",
+                "what are your functions", "can you assist me", "how does this work",
+                "what help can you provide", "what support do you offer"
+            ],
+            "responses": [
+                "I can help you with college information like admissions, courses, fees, contact details, and general FAQs.",
+                "I'm here to assist with college-related queries including admission procedures, course details, fee structure, and campus information.",
+                "As your college assistant, I can provide information about admissions, courses, fees, campus facilities, and more!",
+                "I specialize in college FAQs - ask me about admissions, programs, fees, campus life, or any college-related topic."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "thank you", "thanks", "thank you so much", "appreciate it",
+                "thanks a lot", "you're helpful", "thank you very much",
+                "grateful", "appreciate your help"
+            ],
+            "responses": [
+                "You're welcome! Happy to help.",
+                "Glad I could assist you!",
+                "You're welcome! Let me know if you need anything else.",
+                "My pleasure! Feel free to ask more questions."
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "admission", "admission requirements", "how to apply",
+                "admission process", "eligibility", "admission criteria",
+                "how to get admission", "admission procedure", "apply for college",
+                "admission form", "application process"
+            ],
+            "responses": [
+                "For admissions, you typically need your 12th marksheet, transfer certificate, and completed application form. Minimum 60% marks in 12th grade is required.",
+                "The admission process involves submitting your 12th marksheet, transfer certificate, and online application. Specific requirements may vary by course.",
+                "Admission requirements include 12th grade marksheet, transfer certificate, and completed application. Minimum 60% in 12th grade is generally required.",
+                "To apply: 1) Submit 12th marksheet 2) Fill online application 3) Provide transfer certificate 4) Meet minimum 60% criteria."
+            ]
+        },
+        {
+            "tag": "courses",
+            "patterns": [
+                "courses", "programs", "what courses do you offer",
+                "available courses", "degree programs", "study programs",
+                "what programs are available", "which courses can i take",
+                "educational programs", "academic courses"
+            ],
+            "responses": [
+                "We offer B.Tech in Computer Science, Mechanical, Electrical, and Civil Engineering. Also BBA, BCA, MBA, and M.Tech programs.",
+                "Available courses include B.Tech (CSE, ME, EE, CE), BBA, BCA, MBA, and M.Tech programs.",
+                "Our college offers B.Tech, BBA, BCA, MBA, and M.Tech programs across various specializations.",
+                "Programs available: B.Tech in 4 engineering streams, BBA, BCA at undergraduate level, and MBA, M.Tech at postgraduate level."
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "fees", "fee structure", "tuition fees", "course fees",
+                "how much does it cost", "fee details", "what are the fees",
+                "fee payment", "annual fees", "semester fees"
+            ],
+            "responses": [
+                "B.Tech annual fee: ₹1,20,000 | BBA/BCA: ₹80,000 | MBA: ₹1,50,000 | Hostel: ₹60,000 additional per year.",
+                "Fee structure: B.Tech - ₹1.2L/year, BBA/BCA - ₹80K/year, MBA - ₹1.5L/year. Hostel fee is ₹60K/year extra.",
+                "Annual fees: Engineering programs ₹1,20,000, Management ₹80,000-1,50,000. Hostel accommodation ₹60,000 per year.",
+                "Course fees: B.Tech ₹1.2L, BBA/BCA ₹80K, MBA ₹1.5L per year. Separate hostel charges apply."
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact", "contact number", "phone number", "email",
+                "how to contact", "college address", "where are you located",
+                "phone", "mobile number", "office number", "location"
+            ],
+            "responses": [
+                "College contact: +91-XXXXXXXXXX | Email: info@college.edu | Address: Education City, Sector 62, Noida",
+                "You can reach us at +91-XXXXXXXXXX during office hours (9 AM-5 PM, Mon-Sat). Email: info@college.edu",
+                "Contact: Phone +91-XXXXXXXXXX, Email info@college.edu. Address: Education City, Knowledge Park, Noida",
+                "Reach us at +91-XXXXXXXXXX or info@college.edu. Campus: Education City, Sector 62, Noida, UP"
+            ]
+        }
+    ]
+}
