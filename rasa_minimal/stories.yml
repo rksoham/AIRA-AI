@@ -1,0 +1,124 @@
+version: "3.1"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_college
+  - action: utter_ask_about_college
+  - intent: affirm
+  - action: utter_greet
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_greet
+
+- story: admission inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_admissions
+  - action: utter_ask_admissions
+  - intent: affirm
+  - action: utter_greet
+
+- story: courses inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_courses
+  - action: utter_ask_courses
+  - intent: affirm
+  - action: utter_greet
+
+- story: fees inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: affirm
+  - action: utter_greet
+
+- story: contact inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_contact
+  - action: utter_ask_contact
+  - intent: affirm
+  - action: utter_greet
+
+- story: placements inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_placements
+  - action: utter_ask_placements
+  - intent: affirm
+  - action: utter_greet
+
+- story: facilities inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_facilities
+  - action: utter_ask_facilities
+  - intent: affirm
+  - action: utter_greet
+
+- story: campus life inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_campus_life
+  - action: utter_ask_campus_life
+  - intent: affirm
+  - action: utter_greet
+
+- story: goodbye path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: multiple questions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_courses
+  - action: utter_ask_courses
+  - intent: affirm
+  - action: utter_greet
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: affirm
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: mood interaction
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_greet
+  - intent: ask_about_college
+  - action: utter_ask_about_college
+  - intent: affirm
+  - action: utter_greet
+
+- story: library timing inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_library_timing
+  - action: utter_ask_library_timing
+  - intent: affirm
+  - action: utter_greet
+

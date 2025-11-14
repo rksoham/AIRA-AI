@@ -1,0 +1,76 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - ask_admissions
+  - ask_courses
+  - ask_fees
+  - ask_contact
+  - ask_about_college
+  - ask_placements
+  - ask_facilities
+  - ask_campus_life
+  - ask_library_timing
+
+entities: []
+
+slots: {}
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm AIRA, your college information assistant for Acharya Institute of Technology. How can I help you today?"
+    - text: "Hi there! Welcome to AIRA. What would you like to know about Acharya Institute of Technology?"
+    - text: "Greetings! I'm here to provide information about Acharya Institute of Technology. What can I assist you with?"
+
+  utter_goodbye:
+    - text: "Goodbye! Thank you for using AIRA. Feel free to ask if you have more questions."
+    - text: "See you later! Don't hesitate to return if you need more information."
+    - text: "Have a great day! Remember, I'm here to help with college information."
+
+  utter_affirm:
+    - text: "Great! Is there anything else you'd like to know?"
+
+  utter_deny:
+    - text: "No problem. Feel free to ask me anything about Acharya Institute of Technology."
+
+  utter_mood_great:
+    - text: "That's wonderful to hear!"
+
+  utter_mood_unhappy:
+    - text: "Sorry to hear that. I'm here to help with college information. What can I assist you with?"
+
+  utter_ask_admissions:
+    - text: "Admissions to the Bachelor of Engineering programs at Acharya Institute of Technology are conducted through KCET, COMEDK, or Management Quota. Candidates must have passed 10 & 12 with Physics and Mathematics as compulsory subjects and obtained a minimum of 65 percent aggregate marks."
+
+  utter_ask_courses:
+    - text: "Our college offers BE (CSE, ISE, ME, EE, CE, BT), BBA with specializations in Marketing, Finance, Human Resource Management, and Business Analytics, BCA with specializations in Cloud Computing, Data Science, Artificial Intelligence, and Web Development, along with MBA and M.Tech programs across various specializations."
+
+  utter_ask_fees:
+    - text: "The annual fee for the Bachelor of Engineering program is approximately 2.7 lakh rupees per year. The fee for MBA is around 1.5 lakh rupees, MCA about 1.2 lakh rupees, and M.Tech about 1.25 lakh rupees. Hostel accommodation costs approximately 60000 rupees per year."
+
+  utter_ask_contact:
+    - text: "You can reach Acharya Institute of Technology at Phone: +91 74066 44449 or +91 97317 97677, Email: admissions@acharya.ac.in, Address: Acharya Dr S Radhakrishnan Road, Acharya PO, Soladevanahalli, Bengaluru 560107, Karnataka, India."
+
+  utter_ask_about_college:
+    - text: "Acharya Institute of Technology, established in 2000, is one of the top engineering colleges in Bengaluru. It is affiliated with Visvesvaraya Technological University, Belagavi, and approved by AICTE, New Delhi. The college offers state of the art infrastructure, highly qualified faculty, and a vibrant campus life across a 120 acre campus."
+
+  utter_ask_placements:
+    - text: "Acharya Institute of Technology has a strong placement record with top recruiters like Infosys, Wipro, TCS, Accenture, IBM, Capgemini, and Tech Mahindra. The highest package offered is around 15 lakh rupees per annum and the average package is approximately 4 to 5 lakh rupees per annum."
+
+  utter_ask_facilities:
+    - text: "Acharya Institute of Technology provides excellent hostel facilities for both boys and girls with 24 hour security, WiFi connectivity, and hygienic food. The campus includes a modern library, sports complex, gym, cafeteria, medical facilities, and transportation services."
+
+  utter_ask_campus_life:
+    - text: "Campus life at Acharya Institute of Technology is vibrant and dynamic with various student clubs, technical societies, and cultural activities. The annual fest Acharya Habba is one of the largest intercollegiate festivals in Bengaluru."
+
+  utter_ask_library_timing:
+    - text: "The library at Acharya Institute of Technology is open from 8:00 AM to 8:00 PM on weekdays. During exam periods, the library remains open until 10:00 PM. The library is closed on Sundays and college holidays."
+
+
+  utter_default:
+    - text: "I'm not sure how to answer that. Could you rephrase or ask me about admissions, courses, fees, placements, or campus life at Acharya Institute of Technology?"

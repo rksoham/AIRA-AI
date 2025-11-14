@@ -1,0 +1,194 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good afternoon
+    - good evening
+    - howdy
+    - what's up
+    - hello there
+    - hi there
+    - greetings
+    - how are you
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see ya
+    - take care
+    - quit
+    - exit
+    - have a good day
+    - bye bye
+    - see you later
+    - good night
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - great
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - great
+    - super stoked
+    - extremely good
+    - so good
+    - so perfect
+    - wonderful
+
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - terrible
+    - awful
+
+- intent: ask_admissions
+  examples: |
+    - admission
+    - admission requirements
+    - how to apply
+    - admission process
+    - eligibility
+    - admission criteria
+    - how to get admission
+    - admission procedure
+    - apply for college
+    - admission form
+    - application process
+    - what are admission requirements
+    - how do I apply
+
+- intent: ask_courses
+  examples: |
+    - courses
+    - programs
+    - what courses do you offer
+    - available courses
+    - degree programs
+    - study programs
+    - what programs are available
+    - which courses can I take
+    - educational programs
+    - academic courses
+
+- intent: ask_fees
+  examples: |
+    - fees
+    - fee structure
+    - tuition fees
+    - course fees
+    - how much does it cost
+    - fee details
+    - what are the fees
+    - fee payment
+    - annual fees
+    - semester fees
+    - how much is the fee
+
+- intent: ask_contact
+  examples: |
+    - contact
+    - contact number
+    - phone number
+    - email
+    - how to contact
+    - college address
+    - where are you located
+    - phone
+    - mobile number
+    - office number
+    - location
+    - how can I reach the college
+    - give me the contact details
+
+- intent: ask_about_college
+  examples: |
+    - tell me about acharya institute of technology
+    - about the college
+    - describe acharya institute
+    - give information about ait
+    - what is acharya institute
+    - college overview
+    - about ait college
+    - details of acharya institute
+    - acharya institute information
+
+- intent: ask_placements
+  examples: |
+    - placement record
+    - how are placements
+    - placement statistics
+    - which companies visit
+    - highest package
+    - average salary package
+    - recruiters
+    - job opportunities
+    - campus placement
+
+- intent: ask_facilities
+  examples: |
+    - hostel facilities
+    - does ait have hostel
+    - college infrastructure
+    - facilities available
+    - campus amenities
+    - hostel for boys and girls
+    - library and wifi
+    - transportation facilities
+    - canteen and gym
+
+- intent: ask_campus_life
+  examples: |
+    - campus life
+    - student activities
+    - college fests
+    - clubs and societies
+    - acharya habba
+    - student clubs
+    - college events
+    - extracurricular activities
+    - culture
+    - life at college
+
+- intent: ask_library_timing
+  examples: |
+    - library timing
+    - when is the library open
+    - library hours
+    - what time does the library open
+    - what time does the library close
+    - library opening and closing time
+    - can you tell me about library timing
+    - library schedule
+    - when can I access the library
+    - library operation hours
+    - is the library open on sunday
+    - library weekend hours
+    - during exam time library hours
+
