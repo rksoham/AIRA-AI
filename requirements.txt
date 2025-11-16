@@ -4,6 +4,6 @@ requests==2.31.0
 numpy==1.23.5
 scipy==1.10.1
 scikit-learn==1.2.2
-spacy==3.5.3
+spacy==3.4.4
 PyYAML==6.0
 Werkzeug==2.2.3
